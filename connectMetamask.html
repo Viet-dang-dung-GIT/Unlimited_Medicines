@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>CONNECTION TO METAMASK</title>
+    <!-- Include Web3.js -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.2.7-rc.0/web3.min.js"></script>
+    <link rel="icon" href="data:,">
+    <script type="text/javascript" src="./src/connect.js"></script>
+
+    <style>
+        body {
+            background-color: palevioletred;
+            font-size: 33px;
+            text-align: center;
+        }
+        button {
+            background-color: aquamarine;
+            font-size: 33px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        button:hover {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="connectMetamask()">CONNECT TO METAMASK</button> <br>
+    <p id="accountArea"></p>
+    <button onclick="connectContract()">CONNECT TO CONTRACT</button> <br>
+    <p id="contractArea"></p>
+</body>
+</html>
